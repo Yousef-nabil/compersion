@@ -18,7 +18,7 @@ public class Compress {
         Map<Long, Integer> freq = new HashMap<>();
 
         try (FileInputStream fis = new FileInputStream(file)) {
-            byte[] buffer = new byte[n];
+            byte[] buffer = new byte[1];
             int bytesRead=0;
             while ((bytesRead = fis.read(buffer)) != -1) {
                 long value = 0;
